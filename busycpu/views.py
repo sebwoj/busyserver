@@ -12,3 +12,6 @@ def make_cpu_busy():
 def index(request):
     make_cpu_busy()
     return HttpResponse("Hello, world.")
+
+def health(request):
+    return HttpResponse("ok.")
